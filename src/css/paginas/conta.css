@@ -1,0 +1,80 @@
+.profile-header {
+  display: flex;
+  min-height: 2.8rem;
+}
+.profile-header h1 {
+  font-size: 2.15rem;
+  margin: 0;
+}
+.profile-header p {
+  color: var(--muted);
+  font-size: 0.75rem;
+  margin: 0.25rem 0 0;
+}
+.account-stat {
+  align-items: center;
+  background: var(--night);
+  border-radius: 1.25rem;
+  display: flex;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+.account-stat strong {
+  color: var(--surface);
+  font-size: 2rem;
+}
+.account-stat span {
+  color: color-mix(in srgb, var(--surface) 70%, transparent);
+  font-size: 0.8rem;
+}
+.my-meals {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+.my-meals > a {
+  align-items: center;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  display: flex;
+  gap: 0.7rem;
+  padding: 0.55rem;
+}
+.account-meal-image {
+  align-self: stretch;
+  border-radius: 0.7rem;
+  flex: 0 0 3.4rem;
+  min-width: 0;
+  object-fit: cover;
+}
+.my-meals > a > div {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.my-meals strong {
+  font-size: 0.85rem;
+}
+.my-meals small {
+  color: var(--muted);
+  font-size: 0.7rem;
+}
+.my-meals svg {
+  color: var(--muted);
+}
+.page-login h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0;
+}
+.login-error {
+  font-size: 0.78rem;
+  margin: 0;
+  min-height: 1rem;
+}
+.demo-hint {
+  color: var(--muted);
+  font-size: 0.7rem;
+  text-align: center;
+}
