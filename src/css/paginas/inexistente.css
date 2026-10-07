@@ -1,0 +1,25 @@
+.page-inexistente {
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  text-align: center;
+}
+.not-found-icon {
+  color: var(--accent);
+  display: flex;
+}
+.not-found-icon svg {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+.page-inexistente h1 {
+  font-size: 2rem;
+  margin-bottom: 0.2rem;
+}
+.page-inexistente p:not(.eyebrow) {
+  color: var(--muted);
+  max-width: 20rem;
+}
+.page-inexistente .button {
+  margin-top: 0.5rem;
+}
