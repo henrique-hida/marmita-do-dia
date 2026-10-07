@@ -1,0 +1,208 @@
+import frangoGrelhado from "../../../assets/frango-grelhado.webp";
+import strogonoff from "../../../assets/strogonoff.webp";
+import escondidinho from "../../../assets/escondidinho.jpg";
+import tilapia from "../../../assets/tilapia.jpg";
+import lasanha from "../../../assets/lasanha.webp";
+import feijoada from "../../../assets/Feijoada_Carioca_de_Sexta_Feira.jpg";
+import vegetariano from "../../../assets/vegetariano.jpg";
+import bifeAcebolado from "../../../assets/bife-acebolado.webp";
+import panqueca from "../../../assets/panqueca.jpg";
+import parmegiana from "../../../assets/parmegiana.jpg";
+import carnePure from "../../../assets/carne-pure.jpg";
+import yakisoba from "../../../assets/yakisoba.jpeg";
+
+export const usuarios = [
+  {
+    id: 1,
+    nome: "Henrique Hida",
+    email: "henrique@gmail.com",
+    senha: "123456",
+    bairro: "Nova Mogilar",
+  },
+  {
+    id: 2,
+    nome: "Matheus Schalch",
+    email: "matheus@gmail.com",
+    senha: "123456",
+    bairro: "Nova Mogilar",
+  },
+  {
+    id: 3,
+    nome: "Enzo Yano",
+    email: "enzo@gmail.com",
+    senha: "123456",
+    bairro: "Mogi Moderno",
+  },
+  {
+    id: 4,
+    nome: "User teste",
+    email: "user@gmail.com",
+    senha: "123456",
+    bairro: "Ipiranga",
+  },
+];
+export const imagensPorCategoria = {
+  "Marmitas caseiras": frangoGrelhado,
+  "Comida brasileira": feijoada,
+  Saudável: vegetariano,
+  Massas: lasanha,
+  "Comida asiática": yakisoba,
+};
+export const categorias = [
+  { nome: "Marmitas caseiras", icone: "utensils" },
+  { nome: "Comida brasileira", icone: "cooking-pot" },
+  { nome: "Saudável", icone: "salad" },
+  { nome: "Massas", icone: "chef-hat" },
+  { nome: "Comida asiática", icone: "soup" },
+];
+const imagensPorId = {
+  1: frangoGrelhado,
+  2: strogonoff,
+  3: escondidinho,
+  4: tilapia,
+  5: lasanha,
+  6: feijoada,
+  7: vegetariano,
+  8: bifeAcebolado,
+  9: panqueca,
+  10: parmegiana,
+  11: carnePure,
+  12: yakisoba,
+};
+export const marmitas = [
+  {
+    id: 1,
+    publicadorId: 1,
+    nome: "Frango grelhado com arroz e feijão",
+    categoria: "Marmitas caseiras",
+    preco: 19.9,
+    entrega: "11h às 13h",
+    bairro: "Centro",
+    porcoes: 18,
+    descricao: "Frango grelhado, arroz, feijão, cenoura e salada fresca.",
+  },
+  {
+    id: 2,
+    publicadorId: 2,
+    nome: "Strogonoff de frango",
+    categoria: "Marmitas caseiras",
+    preco: 22,
+    entrega: "11h30 às 14h",
+    bairro: "Mogi Moderno",
+    porcoes: 12,
+    descricao: "Strogonoff cremoso, arroz branco, batata palha e salada.",
+  },
+  {
+    id: 3,
+    publicadorId: 3,
+    nome: "Escondidinho de carne",
+    categoria: "Comida brasileira",
+    preco: 24.5,
+    entrega: "11h às 13h30",
+    bairro: "Vila Suissa",
+    porcoes: 9,
+    descricao: "Purê de mandioca, carne desfiada, queijo gratinado e salada.",
+  },
+  {
+    id: 4,
+    publicadorId: 4,
+    nome: "Tilápia com legumes",
+    categoria: "Saudável",
+    preco: 27.9,
+    entrega: "11h às 14h",
+    bairro: "Jardim Esperança",
+    porcoes: 7,
+    descricao: "Filé de tilápia assado, legumes no vapor e arroz integral.",
+  },
+  {
+    id: 5,
+    publicadorId: 1,
+    nome: "Lasanha bolonhesa",
+    categoria: "Massas",
+    preco: 26,
+    entrega: "12h às 14h",
+    bairro: "Centro",
+    porcoes: 15,
+    descricao: "Lasanha artesanal com molho de tomate, carne e queijo.",
+  },
+  {
+    id: 6,
+    publicadorId: 2,
+    nome: "Feijoada individual",
+    categoria: "Comida brasileira",
+    preco: 25,
+    entrega: "11h30 às 15h",
+    bairro: "Mogi Moderno",
+    porcoes: 10,
+    descricao: "Feijoada completa com arroz, couve, farofa e laranja.",
+  },
+  {
+    id: 7,
+    publicadorId: 3,
+    nome: "Marmita vegetariana",
+    categoria: "Saudável",
+    preco: 21.5,
+    entrega: "11h às 13h",
+    bairro: "Vila Suissa",
+    porcoes: 8,
+    descricao: "Grão-de-bico, arroz integral, legumes assados e folhas.",
+  },
+  {
+    id: 8,
+    publicadorId: 4,
+    nome: "Bife acebolado",
+    categoria: "Comida brasileira",
+    preco: 23.9,
+    entrega: "11h às 14h",
+    bairro: "Jardim Esperança",
+    porcoes: 11,
+    descricao: "Bife acebolado, arroz, feijão, fritas e salada.",
+  },
+  {
+    id: 9,
+    publicadorId: 1,
+    nome: "Panqueca de ricota e espinafre",
+    categoria: "Massas",
+    preco: 20,
+    entrega: "11h às 13h30",
+    bairro: "Centro",
+    porcoes: 6,
+    descricao: "Panquecas recheadas de ricota, espinafre e molho de tomate.",
+  },
+  {
+    id: 10,
+    publicadorId: 2,
+    nome: "Parmegiana de frango",
+    categoria: "Comida brasileira",
+    preco: 28,
+    entrega: "12h às 14h30",
+    bairro: "Mogi Moderno",
+    porcoes: 13,
+    descricao: "Frango empanado, molho, queijo, arroz e batata frita.",
+  },
+  {
+    id: 11,
+    publicadorId: 3,
+    nome: "Carne moída com purê",
+    categoria: "Marmitas caseiras",
+    preco: 18.5,
+    entrega: "11h às 13h",
+    bairro: "Vila Suissa",
+    porcoes: 5,
+    descricao: "Carne moída refogada, purê de batata e legumes.",
+  },
+  {
+    id: 12,
+    publicadorId: 4,
+    nome: "Yakissoba de legumes",
+    categoria: "Comida asiática",
+    preco: 22.9,
+    entrega: "11h30 às 14h",
+    bairro: "Jardim Esperança",
+    porcoes: 9,
+    descricao: "Macarrão oriental com legumes frescos e molho especial.",
+  },
+].map((item) => ({
+  ...item,
+  imagem: imagensPorId[item.id] || imagensPorCategoria[item.categoria],
+}));
