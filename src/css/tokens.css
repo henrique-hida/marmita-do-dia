@@ -1,0 +1,18 @@
+:root {
+  --ink: #273228;
+  --muted: #74796d;
+  --paper: #f7f4ed;
+  --surface: #fffdf8;
+  --line: #dfdbcd;
+  --accent: #66734e;
+  --accent-dark: #465438;
+  --soft: #e8ecdc;
+  --green: #75815a;
+  --night: #283428;
+  --cream: #eee8da;
+  --terracotta: #b96f50;
+  --danger: #a94d3d;
+  --shadow: 0 10px 30px rgba(39, 50, 40, 0.08);
+  --shadow-raised: 0 18px 40px rgba(39, 50, 40, 0.15);
+  --space: 1rem;
+}
