@@ -1,0 +1,130 @@
+.page-publicar h1 {
+  font-size: 2.35rem;
+  margin-bottom: 0;
+}
+.publish-login-notice {
+  align-items: flex-start;
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1rem;
+}
+.publish-login-notice > svg {
+  color: var(--terracotta);
+  flex: 0 0 1.4rem;
+}
+.publish-login-notice h2 {
+  font-size: 1.05rem;
+  margin: 0 0 0.3rem;
+}
+.publish-login-notice p {
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.45;
+  margin: 0;
+}
+.publish-login-notice .button {
+  align-self: stretch;
+}
+.publish-form,
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.publish-form label,
+.login-form label {
+  color: var(--muted);
+  display: flex;
+  flex-direction: column;
+  font-size: 0.75rem;
+  font-weight: 700;
+  gap: 0.35rem;
+}
+.category-picker {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.category-picker legend {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 0.45rem;
+  padding: 0;
+}
+.category-picker > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.category-picker label {
+  cursor: pointer;
+  flex: 1 1 calc(50% - 0.2rem);
+  min-width: 0;
+  min-width: 0;
+  position: relative;
+}
+.category-picker input {
+  opacity: 0;
+  position: absolute;
+}
+.category-picker span {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  color: var(--muted);
+  display: flex;
+  font-size: 0.68rem;
+  font-weight: 800;
+  justify-content: center;
+  padding: 0.7rem 0.3rem;
+}
+.category-picker input:checked + span {
+  background: var(--night);
+  border-color: var(--night);
+  color: var(--surface);
+}
+.category-picker input:focus-visible + span {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.publish-form input,
+.publish-form select,
+.login-form input {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 0.85rem;
+  color: var(--ink);
+  min-width: 0;
+  outline: 0;
+  padding: 0.9rem;
+}
+.publish-form input:focus,
+.publish-form select:focus,
+.login-form input:focus {
+  border-color: var(--accent);
+}
+.form-row {
+  display: flex;
+  gap: 0.8rem;
+}
+.form-row label {
+  flex: 1 1 0;
+  min-width: 0;
+}
+.form-message {
+  font-size: 0.8rem;
+  margin: 0;
+  min-height: 1.1rem;
+}
+.form-message.error,
+.login-error {
+  color: var(--danger);
+}
+.form-message.success {
+  color: var(--green);
+}
