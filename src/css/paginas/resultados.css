@@ -1,24 +1,29 @@
 .page-resultados {
   gap: 1.15rem;
 }
+
 .results-top {
   align-items: center;
   display: flex;
   justify-content: space-between;
   position: relative;
 }
+
 .results-top > .back-link {
   flex: 0 0 2.2rem;
 }
+
 .results-top .app-brand {
   left: 50%;
   position: absolute;
   transform: translateX(-50%);
 }
+
 .results-title {
   font-size: 2.15rem;
   margin: 0;
 }
+
 .avatar-link {
   align-items: center;
   color: var(--accent-dark);
@@ -26,10 +31,12 @@
   flex: 0 0 2.2rem;
   justify-content: center;
 }
+
 .avatar-link svg {
   height: 1.2rem;
   width: 1.2rem;
 }
+
 .filter-row {
   align-items: center;
   color: var(--muted);
@@ -37,17 +44,20 @@
   font-size: 0.72rem;
   justify-content: flex-start;
 }
+
 .sort-control {
   align-items: center;
   display: flex;
   gap: 0.75rem;
   justify-content: space-between;
 }
+
 .sort-control > span {
   color: var(--muted);
   font-size: 0.72rem;
   font-weight: 700;
 }
+
 .sort-control > div {
   background: var(--surface);
   border: 1px solid var(--line);
@@ -55,6 +65,7 @@
   display: flex;
   padding: 0.2rem;
 }
+
 .sort-option {
   background: transparent;
   border: 0;
@@ -65,15 +76,18 @@
   font-weight: 800;
   padding: 0.45rem 0.6rem;
 }
+
 .sort-option-active {
   background: var(--night);
   color: var(--surface);
 }
+
 .results-list {
   display: flex;
   flex-flow: row wrap;
   gap: 0.95rem;
 }
+
 .meal-card {
   background: var(--surface);
   border: 1px solid color-mix(in srgb, var(--line) 78%, var(--surface));
@@ -86,6 +100,7 @@
   overflow: hidden;
   padding: 0;
 }
+
 .meal-image-wrap {
   align-self: stretch;
   display: flex;
@@ -94,11 +109,13 @@
   overflow: hidden;
   position: relative;
 }
+
 .meal-image {
   flex: 1;
   min-width: 0;
   object-fit: cover;
 }
+
 .meal-availability {
   background: var(--night);
   border-radius: 999px;
@@ -110,21 +127,25 @@
   position: absolute;
   right: 0.65rem;
 }
+
 .meal-card-copy {
   display: flex;
   flex-direction: column;
   gap: 0.55rem;
   padding: 0.7rem;
 }
+
 .meal-info {
   flex: 1;
   min-width: 0;
 }
+
 .meal-info h2 {
   font-size: 0.9rem;
   line-height: 1.15;
   margin: 0.35rem 0;
 }
+
 .meal-info p {
   align-items: center;
   color: var(--muted);
@@ -133,19 +154,23 @@
   gap: 0.25rem;
   margin: 0;
 }
+
 .meal-info p svg {
   flex: 0 0 0.8rem;
   height: 0.8rem;
 }
+
 .meal-meta {
   align-items: center;
   display: flex;
   justify-content: space-between;
 }
+
 .meal-meta strong {
   color: var(--accent-dark);
   font-size: 0.85rem;
 }
+
 .empty-state {
   align-items: center;
   display: flex;
@@ -153,17 +178,21 @@
   padding: 3rem 1rem;
   text-align: center;
 }
+
 .empty-state > span {
   color: var(--accent);
   display: flex;
 }
+
 .empty-state > span svg {
   height: 2.5rem;
   width: 2.5rem;
 }
+
 .empty-state h2 {
   margin-bottom: 0.4rem;
 }
+
 .empty-state p {
   color: var(--muted);
   font-size: 0.85rem;

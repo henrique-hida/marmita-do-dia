@@ -1,8 +1,10 @@
 import "../../css/paginas/inicio.css";
 import { categorias, marmitas } from "../dadosMockados/dados.js";
 import { marca } from "../navbar/marca.js";
+
 function inicio(app) {
   const destaque = marmitas[0];
+
   app.innerHTML = `
     <section class="page page-inicio">
       <header class="home-header">
@@ -83,11 +85,13 @@ function inicio(app) {
       </section>
     </section>
   `;
+
   document.getElementById("form-busca").addEventListener("submit", (event) => {
     event.preventDefault();
     location.hash = `#resultados?busca=${encodeURIComponent(document.getElementById("busca").value.trim())}`;
   });
 }
+
 export default {
   url: "#inicio",
   label: "Início",

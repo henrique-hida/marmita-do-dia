@@ -3,6 +3,7 @@ import { marmitas } from "../dadosMockados/dados.js";
 import { marca } from "../navbar/marca.js";
 const moeda = (valor) =>
   valor.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+
 function resultados(app) {
   const params = new URLSearchParams(location.hash.split("?")[1] || "");
   const busca = params.get("busca") || "";
@@ -21,6 +22,7 @@ function resultados(app) {
     .sort((a, b) =>
       ordem === "mais-porcoes" ? b.porcoes - a.porcoes : a.preco - b.preco,
     );
+
   app.innerHTML = `
     <section class="page page-resultados">
       <div class="results-top">
@@ -76,6 +78,7 @@ function resultados(app) {
       </div>
     </section>
   `;
+
   document.querySelectorAll(".sort-option").forEach((button) => {
     button.addEventListener("click", () => {
       params.set("ordem", button.dataset.ordem);
@@ -83,6 +86,7 @@ function resultados(app) {
     });
   });
 }
+
 export default {
   url: "#resultados",
   label: "Buscar",
